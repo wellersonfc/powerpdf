@@ -1,0 +1,119 @@
+.filtros {
+    display: none;
+  }
+  
+  .mostrar-total {
+    margin: 38px 0 15px;
+    color: #0078ff;
+  
+    span {
+      border-radius: 15px;
+      border: 2px solid $GRAY-300;
+      background-color: $GRAY-200;
+      padding: 0 5px;
+      color: #000;
+    }
+  }
+  
+  .lista {
+    width: 743px;
+    margin-bottom: 15px;
+  
+    .lista-vazia {
+      display: flow;
+      justify-content: center;
+      justify-items: center;
+      margin: 35px 0 25px;
+  
+      img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  
+    .lista-pdfs {
+      list-style: none;
+      padding: 0 14px 0 0;
+      margin: 0;
+      height: 281px;
+      overflow-y: auto;
+      border-radius: 8px;
+      scrollbar-width: thin;
+      scrollbar-color: #007bff $GRAY-300;
+  
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+  
+      &::-webkit-scrollbar-track {
+        background: $GRAY-300;
+        border-radius: 8px;
+        margin: 4px 0;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: #007bff;
+        border-radius: 8px;
+        border: 3px solid $GRAY-300;
+      }
+  
+      &::-webkit-scrollbar-button {
+        display: none;
+      }
+    }
+  
+    .item-pdf {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid $GRAY-300;
+      padding: 0 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      background-color: $GRAY-200;
+      height: 56px;
+  
+      div {
+        display: flex;
+        flex: 1;
+        text-align: center;
+  
+        img {
+          padding: 0 10px;
+        }
+      }
+  
+      div:first-child {
+        text-align: left;
+      }
+  
+      div:last-child {
+        text-align: right;
+      }
+    }
+  
+    .button-principal {
+      width: 127px;
+      height: 23px;
+      border-radius: 8px;
+      border: 2px solid $blue-butons;
+      background-color: $blue-butons;
+      color: $WHITE;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s, border-color 0.3s;
+  
+      &:hover {
+        background-color: $WHITE;
+        border: 2px dashed $blue-butons;
+        color: $blue-500;
+      }
+  
+      &:active {
+        background-color: $WHITE;
+        border-color: $blue-500;
+      }
+    }
+  }
+  

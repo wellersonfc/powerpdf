@@ -1,0 +1,90 @@
+form{
+  width: 743px;
+}
+.forms {
+    margin-top: -40px;
+    $input-file-color: $blue-con;
+    $input-file-hover-color: $blue-con;
+
+  
+    input[type="file"] {
+      outline: 0;
+      opacity: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+  
+    .label {
+      //width: 120px;
+      border: 2px dashed $input-file-color;
+      border-radius: 5px;
+      display: block;
+      padding: 1.2em;
+      transition: border 300ms ease;
+      cursor: pointer;
+      //text-align: center;
+      color: $blue-GRAY2;
+  
+      &:hover {
+        border: 2px solid $input-file-hover-color;
+      }
+    }
+    .validacao, .error{
+      margin-bottom: 7px;
+      font-size: 12px;
+      margin-top: 7px;
+      color: red;
+    }
+    .success{
+      margin-bottom: 7px;
+      font-size: 12px;
+      margin-top: 7px;
+      color: $blue-500;
+    }
+    .form-group-file{
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 8px;
+        //height: 150px;
+        input{
+            width: 100%;
+            height: 145px;
+            &::placeholder{
+                color: $blue-GRAY2;
+            }
+        }
+        .input-label{
+          position: relative;
+          top: 65px;
+        }
+    }
+    .form-group-text {
+        input {
+          border: 2px  $GRAY-300;
+          margin-top: 12px;
+          height: 52px;
+          width: 97%;
+          margin-bottom: 16px;
+          border-radius: 5px;
+          padding-left: 13px;
+          &::placeholder {
+            color: $blue-GRAY2; /* Certifique-se de que $blue-GRAY2 está definido nas variáveis */
+          }
+        }
+      }
+  
+    .form-group p {
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #333;
+    }
+    .button-principal{
+        width: 100%;
+        height: 52px;
+        background-color: $blue-butons;
+        border-radius: 8px;
+        border-color:  $blue-butons;
+        color: #fff;
+        border: 2px  $blue-butons;
+    }
+}
